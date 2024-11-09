@@ -40,7 +40,7 @@ const Intro = () => {
             Creative Template
           </h2>
           <h3 className="font-MontserratBold text-3xl text-center uppercase text-white md:text-7xl sm:text-5xl title-line-intro">
-            Welcome <span className="block">to MoGo</span>
+            Welcome <span className="block line before:bg-white">to MoGo</span>
           </h3>
 
           <Link href="/about" passHref>
