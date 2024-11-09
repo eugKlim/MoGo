@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('../scss/fonts.css');
+
+@layer components {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .loading-gif {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: 100px auto 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #d7dedd;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 60px;
+    background: #5cb8a7;
+    &:hover {
+      background: #157664;
+    }
+  }
+}
