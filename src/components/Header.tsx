@@ -41,7 +41,7 @@ const Header = () => {
           aria-label="close popup"
         />
 
-        <Link href="/home">
+        <Link href="/home" passHref>
           <h1
             className="font-MontserratBold text-white z-20 cursor-pointer sm:text-lg md:text-3xl"
             aria-label="Go to home page"

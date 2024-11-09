@@ -16,6 +16,10 @@
     margin: 100px auto 0;
   }
 
+  button {
+    transition: all 0.3s linear;
+  }
+
   ::-webkit-scrollbar {
     width: 10px;
   }
