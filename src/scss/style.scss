@@ -17,13 +17,13 @@
   }
 
   .line {
-    @apply relative before:content-[''] before:absolute before:w-14 before:h-1 before:left-2/4 before:-bottom-7 before:bg-red-500 before:transform before:-translate-x-1/2;
+    @apply relative before:content-[''] before:absolute before:w-14 before:h-1 before:left-2/4 before:-bottom-8 before:bg-red-500 before:transform before:-translate-x-1/2;
   }
 
   button {
     transition: all 0.3s linear;
   }
-  
+
   ::-webkit-scrollbar {
     width: 10px;
   }

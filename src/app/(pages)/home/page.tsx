@@ -7,8 +7,12 @@ import What from '@/components/What';
 import Quote from '@/components/Quote';
 import Logos from '@/components/Logos';
 import Testimonial from '@/components/Testimonial';
+import Say from '@/components/Say';
+import Blog from '@/components/Blog';
+import Map from '@/components/Map';
+import Info from '@/components/Info';
 
-const intro = () => {
+const home = () => {
   return (
     <div>
       <Intro />
@@ -19,8 +23,12 @@ const intro = () => {
       <Quote />
       <Logos />
       <Testimonial />
+      <Say />
+      <Blog />
+      <Map />
+      <Info />
     </div>
   );
 };
 
-export default intro;
+export default home;
