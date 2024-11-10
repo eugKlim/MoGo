@@ -1,0 +1,13 @@
+.splide__arrow {
+  background-color: #7de5de !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+  &:hover {
+    background-color: #1ec4b9 !important;
+  }
+}

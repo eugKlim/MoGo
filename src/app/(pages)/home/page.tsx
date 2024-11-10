@@ -4,6 +4,9 @@ import Facts from '@/components/Facts';
 import Service from '@/components/Service';
 import Feature from '@/components/Feature';
 import What from '@/components/What';
+import Quote from '@/components/Quote';
+import Logos from '@/components/Logos';
+import Testimonial from '@/components/Testimonial';
 
 const intro = () => {
   return (
@@ -13,6 +16,9 @@ const intro = () => {
       <Service />
       <Feature />
       <What />
+      <Quote />
+      <Logos />
+      <Testimonial />
     </div>
   );
 };
