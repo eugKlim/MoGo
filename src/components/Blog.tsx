@@ -53,6 +53,7 @@ const Blog = () => {
                     alt="Image"
                     width={340}
                     height={214}
+                    sizes="auto"
                   />
 
                   <div className="absolute bottom-4 -left-2 inline-block text-center bg-cyan-400 text-white py-1 px-2">
@@ -78,9 +79,10 @@ const Blog = () => {
                       <Image
                         src="/image/global/watch-ico.svg"
                         alt="icon watch"
-                        className="h-4"
+                        className="h-auto"
                         width={27}
                         height={16}
+                        sizes="auto"
                       />
 
                       <span className="font-RobotoLightItalic text-base">

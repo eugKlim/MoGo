@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`container flex justify-between items-center py-2 text-white max-w-[2500px] bg-orange-700 bg-opacity-80`}
+        className={`container z-[990] flex justify-between items-center py-2 text-white max-w-[2500px] bg-orange-700 bg-opacity-80`}
       >
         <div
           className={`burger-overlay bg-dark sm:fixed lg:hidden w-full min-h-screen min-w-screen z-[901]`}

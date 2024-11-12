@@ -28,7 +28,7 @@ const Testimonial = () => {
     >
       <div className="sm:w-full sm:flex sm:justify-center sm:mb-7 lg:w-[190px]">
         <Image
-          alt=""
+          alt="image"
           src={data.image}
           width={190}
           height={200}

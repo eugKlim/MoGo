@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from 'react';
 import Title from './Title';
 import Image from 'next/image';
@@ -50,10 +50,11 @@ const Say = () => {
                   <div className="md:mr-[32px] sm:mx-auto sm:mb-4">
                     <Image
                       src={data.image}
-                      alt=""
+                      alt="image"
                       width={110}
                       height={110}
                       className="min-w-[110px] h-[110px]"
+                      sizes="auto"
                     />
                   </div>
                   <div>

@@ -18,7 +18,8 @@ const Map = () => {
               src="/image/map/map-ico.svg"
               alt="map icon"
               width={19}
-              height={15}
+              height={25}
+              sizes="auto"
             />
 
             <h2 className="uppercase text-red-500 my-2">Open map</h2>

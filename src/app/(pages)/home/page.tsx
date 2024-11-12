@@ -11,17 +11,22 @@ import Say from '@/components/Say';
 import Blog from '@/components/Blog';
 import Map from '@/components/Map';
 import Info from '@/components/Info';
-
+import About from '@/components/About';
+import Team from '@/components/Team';
+import Work from '@/components/Work';
 const home = () => {
   return (
     <div>
       <Intro />
+      <About />
       <Facts />
       <Service />
       <Feature />
       <What />
       <Quote />
+      <Team />
       <Logos />
+      <Work />
       <Testimonial />
       <Say />
       <Blog />
