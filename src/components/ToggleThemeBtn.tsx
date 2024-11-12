@@ -9,10 +9,14 @@ const ToggleThemeBtn: React.FC<ToggleThemeBtnProps> = ({
   lightIco,
   darkIco,
 }) => {
-  const [isToggled, setToggled] = useState<boolean>(() => {
-    const savedState = localStorage.getItem('dark');
-    return savedState ? JSON.parse(savedState) : false;
-  });
+  const [isToggled, setToggled] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const savedState = localStorage.getItem('dark');
+      setToggled(savedState ? JSON.parse(savedState) : false);
+    }
+  }, []);
 
   useEffect(() => {
     if (isToggled) {
@@ -25,14 +29,16 @@ const ToggleThemeBtn: React.FC<ToggleThemeBtnProps> = ({
   const handleToggle = () => {
     setToggled((prevState) => {
       const newState = !prevState;
-      localStorage.setItem('dark', JSON.stringify(newState));
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('dark', JSON.stringify(newState));
+      }
       return newState;
     });
   };
 
   return (
     <div
-      className={`relative w-[47] h-[27] rounded-full cursor-pointer transition-colors select-none  bg-gray-300`}
+      className="relative w-[47] h-[27] rounded-full cursor-pointer transition-colors select-none bg-gray-300"
       onClick={handleToggle}
       aria-label="Toggle theme button"
     >

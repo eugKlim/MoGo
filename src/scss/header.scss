@@ -1,0 +1,77 @@
+@layer components {
+  .burger {
+    padding: 10px 20px;
+    background: transparent;
+    z-index: 999 !important;
+    & span {
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      transition: 0.2s linear;
+      &:first-child {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 9px;
+      }
+      &:last-child {
+        top: 18px;
+      }
+    }
+    &.active-burger {
+      position: fixed;
+      right: 20px;
+      top: 35px;
+      & span {
+        &:first-child {
+          top: 0;
+          transform: rotate(-45deg);
+          background-color: red;
+        }
+        &:nth-child(2) {
+          top: 0;
+          transform: rotate(45deg);
+          background-color: red;
+        }
+        &:last-child {
+          top: 18px;
+          transform: rotate(35deg);
+          opacity: 0;
+        }
+      }
+    }
+    &-overlay {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s linear;
+      &.active {
+        height: 200vh;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .nav {
+    &-block {
+      transform: translateX(-100%);
+      transition: 0.2s linear;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      &.active {
+        transform: translateX(0);
+      }
+    }
+    &-hidden {
+      transform: translateX(0);
+      position: static;
+      top: 0;
+      left: 0;
+      height: auto;
+      background-color: transparent !important;
+    }
+  }
+}

@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-RobotoRegular h-screen grid grid-rows-[auto_1fr_auto]">
+      <body className="font-RobotoRegular h-screen grid grid-rows-[auto_1fr_auto] dark:bg-slate-800 dark:text-white">
         <Header />
         {children}
         <Footer />

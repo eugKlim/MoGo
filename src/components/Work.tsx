@@ -100,7 +100,6 @@ const Work = () => {
                 } absolute transition-all duration-500 linear top-0 left-0 w-full h-full opacity-0 invisible flex justify-center align-center hover-gradient flex-col text-center xl:group-hover:opacity-90 xl:group-hover:visible cursor-default`}
               >
                 <div>
-                  {/* !!!!!!! */}
                   <Image
                     alt="Image"
                     src="/image/work/ico.png"

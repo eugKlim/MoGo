@@ -79,7 +79,7 @@ const Blog = () => {
                       <Image
                         src="/image/global/watch-ico.svg"
                         alt="icon watch"
-                        className="h-auto"
+                        className="w-auto"
                         width={27}
                         height={16}
                         sizes="auto"
@@ -93,8 +93,8 @@ const Blog = () => {
                       <Image
                         src="/image/global/comment-ico.svg"
                         alt="icon comment"
-                        className="h-4"
-                        width={27}
+                        className="w-auto"
+                        width={20}
                         height={16}
                       />
                       <span className="font-RobotoLightItalic text-base">

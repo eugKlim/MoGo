@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import ToggleThemeBtn from './ToggleThemeBtn';
+import { useState, useEffect } from 'react';
+import useScreenWidth from '@/hooks/useScreenWidth';
 
 const Header = () => {
   const pathname = usePathname();
@@ -32,14 +34,34 @@ const Header = () => {
     },
   ];
 
+  const isMobile = useScreenWidth();
+
+  // burger
+  const [isActiveBurger, setActiveBurger] = useState(false);
+  const clickBurger = () => {
+    setActiveBurger((prevState) => !prevState);
+  };
+  useEffect(() => {
+    if (isActiveBurger) {
+      document.documentElement.style.overflow = 'hidden';
+    }
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  }, [isActiveBurger]);
+  // burger /
+
   return (
     <>
       <header
         className={`container z-[990] flex justify-between items-center py-2 text-white max-w-[2500px] bg-orange-700 bg-opacity-80`}
       >
         <div
-          className={`burger-overlay bg-dark sm:fixed lg:hidden w-full min-h-screen min-w-screen z-[901]`}
+          className={`${
+            isActiveBurger ? 'active' : ''
+          } burger-overlay bg-dark sm:fixed lg:hidden w-full min-h-screen min-w-screen z-[901]`}
           aria-label="close popup"
+          onClick={clickBurger}
         />
 
         <Link href="/home" passHref>
@@ -52,7 +74,11 @@ const Header = () => {
           </h1>
         </Link>
         <nav className="flex items-center space-x-6 relative">
-          <ul className={`uppercase text-sm flex items-center space-x-6`}>
+          <ul
+            className={`sm:nav-block ${
+              isActiveBurger ? 'active' : ''
+            }  uppercase text-sm flex items-center sm:flex-col sm:w-full sm:h-screen sm:bg-teal-500 sm:dark:bg-teal-700 lg:dark:bg-transparent sm:fixed sm:top-0 sm:left-0 sm:max-w-60 sm:overflow-y-auto sm:z-[996] sm:pt-12 sm:space-y-10 lg:bg-transparent  lg:static lg:h-auto lg:space-x-6 lg:space-y-0 lg:max-w-full lg:overflow-y-visible lg:pt-1 lg:nav-hidden lg:flex-row`}
+          >
             {headerDataLinks.map((data, index) => {
               const isActive = pathname === `/${data.link}`;
               return (
@@ -65,6 +91,7 @@ const Header = () => {
                   }`}
                   aria-label={data.nameLink}
                   key={index}
+                  onClick={isMobile <= 800 ? clickBurger : undefined}
                 >
                   {data.nameLink}
                 </Link>
@@ -118,6 +145,18 @@ const Header = () => {
             </button>
             {/* / */}
           </div>
+
+          <button
+            aria-label="menu"
+            className={`burger ${
+              isActiveBurger ? 'active-burger' : ''
+            } absolute right-0 z-[701] sm:block lg:hidden`}
+            onClick={clickBurger}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </nav>
       </header>
     </>

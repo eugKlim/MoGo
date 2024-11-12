@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('../scss/fonts.css');
+@import '../scss/header.scss';
 
 .show-hover {
   opacity: 0.9;
