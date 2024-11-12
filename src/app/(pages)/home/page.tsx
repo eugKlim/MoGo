@@ -14,7 +14,7 @@ import Info from '@/components/Info';
 import About from '@/components/About';
 import Team from '@/components/Team';
 import Work from '@/components/Work';
-const home = () => {
+const homePage = () => {
   return (
     <div>
       <Intro />
@@ -36,4 +36,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default homePage;
