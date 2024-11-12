@@ -9,6 +9,9 @@
 }
 
 @layer components {
+  .bg-dark {
+    background: rgb(0, 0, 0, 0.7);
+  }
   .hover-gradient {
     @apply bg-gradient-to-r from-yellow-300 to-red-500 opacity-90;
   }

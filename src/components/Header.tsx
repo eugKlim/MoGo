@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import ToggleThemeBtn from './ToggleThemeBtn';
 
 const Header = () => {
   const pathname = usePathname();
@@ -71,6 +72,11 @@ const Header = () => {
             })}
           </ul>
           <div className="items-center sm:space-x-4 flex sm:pr-16 lg:space-x-6 lg:pr-0">
+            <ToggleThemeBtn
+              lightIco={'/image/global/light-icon.svg'}
+              darkIco={'/image/global/dark-icon.svg'}
+            />
+
             {/* basket */}
             <button className="inline-block lg:hover:text-yellow-500 cursor-pointer">
               <svg

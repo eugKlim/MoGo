@@ -15,7 +15,9 @@ const Title: React.FC<ITitle> = ({ uptitle, title, text }) => {
       <h3 className="line text-slate-900 font-MontserratBold text-3xl text-center uppercase title-line dark:text-white">
         {title}
       </h3>
-      <p className="block text-slate-500 max-w-[968px] mx-auto text-center mt-16 mb-20 dark:text-teal-500">{text}</p>
+      <p className="block text-slate-500 max-w-[968px] mx-auto text-center mt-16 mb-20 dark:text-teal-500">
+        {text}
+      </p>
     </div>
   );
 };
