@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Проект написан на:
 
-## Getting Started
+- nextJs 15
+- typeScript
+- Scss
+- Tailwind
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Что реализовано в этом проекте?
+
+1. При отсутствии контента, footer не прилипает к header.
+
+2. Переиспользуемый аккордион.
+
+3. Слайдер, библиотека `splide slider`.
+
+4. Адаптация под малые устройства.
+
+5. Библиотека `React-modal`, попап. Если будет много контента, то стоит максимальная высота, и появится скролл, так же его цвет, меняется исходя из выбранного режима dark/light.
+
+6. Добавлен google maps.
+
+7. Dark mode(с записью в локальное хранилище).
+
+8. Burger menu для телефонов/планшетов.
+
+9. Фиксация header при скроле.
+
+10. Роутинг.
+
+11. Определение форматов, проверяем, поддерживает ли браузер форматы `.avif` и `.webp`. Если поддерживает `.avif` то все фоновые изображения, будут подгружатся в этом формате, если не поддерживает `.avif` тогда попробует `.webp` если и его не поддерживает, то вернет исходный формат фонового изображения.
+
+12. Мета теги для сео.
+
+13. На телефонах / планшетах, hover блоки, будут вызваны при нажатии на кнопку.
+
+14. Теги для скрин ридеров и семантическая верстка ( accessibility ).
+
+15. В код css добавлены префиксы для поддержки старых браузеров ( autoprefixer ).
+
+16. Для иконок использован формат `.svg`.
+
+<br>
+
+<br>
+
+# Проверить сайт:
+
+[🔗 Ссылка на сайт](https://eugklim.github.io/Mogo/?/home) <br> <br>
+
+**PageSpeed Insights:** [ссылка pageSpeed](https://pagespeed.web.dev/?hl=ru)
+<br>
+**Валидатор:** [ссылка pageSpeed](https://validator.w3.org/)
+
+<br>
+
+```ruby
+https://eugklim.github.io/Mogo/?/home
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Как установить проект себе?
 
-## Learn More
+1. Клонировать репозиторий:
 
-To learn more about Next.js, take a look at the following resources:
+```ruby
+git clone https://github.com/eugKlim/Mogo.git
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Установить зависимости:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```ruby
+npm install
+```
 
-## Deploy on Vercel
+3. Запустить проект:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```ruby
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Переходим по:
+
+```ruby
+http://localhost:3000/home
+```
