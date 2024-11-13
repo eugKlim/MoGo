@@ -31,7 +31,7 @@ const Intro = () => {
 
   return (
     <section
-      className={`bg-options min-w-full mt-[-150px]   text-white  sm:bg-cover item-bg`}
+      className={`bg-options min-w-full mt-[-120px]   text-white  sm:bg-cover item-bg`}
       data-bg="image/intro/intro-bg.jpg"
     >
       <div className="dark:bg-dark pb-9 pt-[300px]">

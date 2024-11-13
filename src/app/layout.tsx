@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-RobotoRegular h-screen grid grid-rows-[auto_1fr_auto] dark:bg-slate-800 dark:text-white">
         <Header />
-        {children}
+        <div className="pt-13" id="root">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

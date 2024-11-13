@@ -5,6 +5,7 @@ import ToggleThemeBtn from '../ToggleThemeBtn';
 import { useState, useEffect } from 'react';
 import useScreenWidth from '@/hooks/useScreenWidth';
 import useScrollSizeWindow from '@/hooks/useScrollSizeWindow';
+import Popup from '../popup/Popup';
 
 const Header = () => {
   const pathname = usePathname();
@@ -64,6 +65,17 @@ const Header = () => {
   }, [howScrollY]);
   // scroll fixed header /
 
+  // modal
+  const [modalIsOpenSearch, setModalIsOpenSearch] = useState(false);
+  const [modalIsOpenBasket, setModalIsOpenBasket] = useState(false);
+
+  const openModalSearch = () => setModalIsOpenSearch(true);
+  const closeModalSearch = () => setModalIsOpenSearch(false);
+
+  const openModalBasket = () => setModalIsOpenBasket(true);
+  const closeModalBasket = () => setModalIsOpenBasket(false);
+  // /modal
+
   return (
     <>
       <header
@@ -120,7 +132,10 @@ const Header = () => {
             />
 
             {/* basket */}
-            <button className="inline-block lg:hover:text-yellow-500 cursor-pointer">
+            <button
+              className="inline-block lg:hover:text-yellow-500 cursor-pointer"
+              onClick={openModalBasket}
+            >
               <svg
                 aria-label="basket button"
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,10 +152,14 @@ const Header = () => {
                 />
               </svg>
             </button>
+            <Popup isOpen={modalIsOpenBasket} onRequestClose={closeModalBasket}>
+              <p>Basket</p>
+            </Popup>
             {/* search */}
             <button
               className="inline-block lg:hover:text-yellow-500 cursor-pointer"
               title="search"
+              onClick={openModalSearch}
             >
               <svg
                 aria-label="search button"
@@ -158,6 +177,35 @@ const Header = () => {
                 />
               </svg>
             </button>
+            <Popup isOpen={modalIsOpenSearch} onRequestClose={closeModalSearch}>
+              <div className="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="w-full p-2 text-black dark:border-white border-2 border-black"
+                  aria-label="search input"
+                />
+                <button
+                  className="bg-green-500 p-3 hover:bg-green-800 -ml-1"
+                  aria-label="search button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </Popup>
             {/* / */}
           </div>
 
