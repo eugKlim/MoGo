@@ -1,9 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import ToggleThemeBtn from './ToggleThemeBtn';
+import ToggleThemeBtn from '../ToggleThemeBtn';
 import { useState, useEffect } from 'react';
 import useScreenWidth from '@/hooks/useScreenWidth';
+import useScrollSizeWindow from '@/hooks/useScrollSizeWindow';
 
 const Header = () => {
   const pathname = usePathname();
@@ -35,6 +36,7 @@ const Header = () => {
   ];
 
   const isMobile = useScreenWidth();
+  const howScrollY = useScrollSizeWindow();
 
   // burger
   const [isActiveBurger, setActiveBurger] = useState(false);
@@ -51,10 +53,23 @@ const Header = () => {
   }, [isActiveBurger]);
   // burger /
 
+  // scroll fixed header
+  const [isFixed, setIsFixed] = useState(false);
+  useEffect(() => {
+    if (howScrollY >= 800) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  }, [howScrollY]);
+  // scroll fixed header /
+
   return (
     <>
       <header
-        className={`container z-[990] flex justify-between items-center py-2 text-white max-w-[2500px] bg-orange-700 bg-opacity-80`}
+        className={`header ${
+          isFixed ? 'fixed-header' : ''
+        } container z-[990] flex justify-between items-center py-2 text-white max-w-[2500px] bg-orange-700 bg-opacity-80`}
       >
         <div
           className={`${

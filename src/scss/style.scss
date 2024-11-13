@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('../scss/fonts.css');
-@import '../scss/header.scss';
+@import url('@/scss/fonts.css');
+@import '@/components/header/header.scss';
 
 .show-hover {
   opacity: 0.9;

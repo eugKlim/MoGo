@@ -1,4 +1,31 @@
 @layer components {
+  html.dark .header.fixed-header {
+    background-color: rgb(7, 143, 143, 0.9);
+  }
+  .header {
+    color: white;
+    min-width: 100%;
+    position: absolute;
+
+    &.fixed-header {
+      background-color: rgba(11, 93, 216, 0.9);
+      top: 0;
+      padding: 12px 20px;
+      min-width: 100%;
+      animation: fromTop 0.2s linear;
+      position: fixed;
+      z-index: 900 !important;
+    }
+  }
+  @keyframes fromTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
   .burger {
     padding: 10px 20px;
     background: transparent;

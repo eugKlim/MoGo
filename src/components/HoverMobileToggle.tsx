@@ -21,9 +21,10 @@ const HoverMobileToggle: React.FC<IHoverMobileToggle> = ({
         <Image
           src="/image/global/hand.svg"
           alt="hand show more"
-          width={24}
+          width={25}
           height={25}
           sizes="auto"
+          className="h-auto"
         />
       ) : (
         '✕'
