@@ -5,7 +5,7 @@ import './popup.scss';
 Modal.setAppElement('#root');
 
 interface ICustomModal {
-  isOpen: boolean;
+  isOpen: boolean; 
   onRequestClose: () => void;
   children: ReactNode;
 }

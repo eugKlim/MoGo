@@ -17,9 +17,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-RobotoRegular h-screen grid grid-rows-[auto_1fr_auto] dark:bg-slate-800 dark:text-white">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/fav-icon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/fav-icon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/fav-icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/fav-icon/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/fav-icon/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
+      <body className="flex flex-col h-screen font-RobotoRegular dark:bg-slate-800 dark:text-white">
         <Header />
-        <div className="pt-13" id="root">
+        <div className="pt-13  flex-1" id="root">
           {children}
         </div>
         <Footer />
