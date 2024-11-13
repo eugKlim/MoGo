@@ -43,14 +43,13 @@ const Intro = () => {
             Welcome <span className="block line before:bg-white">to MoGo</span>
           </h3>
 
-          <Link href="/about" passHref>
-            <button
-              className="block mx-auto bg-transparent border-white border-2 uppercase py-2 px-6 mt-[100px] lg:hover:bg-white lg:hover:text-stone-900 font-MontserratBold"
-              title="Learn more"
-              aria-label="Learn more"
-            >
-              Learn more
-            </button>
+          <Link
+            href="/about"
+            className="inline-block relative left-1/2 transform -translate-x-2/4 bg-transparent border-white border-2 uppercase font-MontserratBold py-2 px-6 mt-[100px] transition-all duration-300 ease-linear lg:hover:bg-white lg:hover:text-stone-900"
+            title="Learn more"
+            aria-label="Learn more"
+          >
+            Learn more
           </Link>
         </div>
 
