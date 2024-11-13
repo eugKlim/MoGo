@@ -21,24 +21,24 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/fav-icon/apple-touch-icon.png"
+          href="./fav-icon/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/fav-icon/favicon-32x32.png"
+          href="./fav-icon/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/fav-icon/favicon-16x16.png"
+          href="./fav-icon/favicon-16x16.png"
         />
-        <link rel="manifest" href="/fav-icon/site.webmanifest" />
+        <link rel="manifest" href="./fav-icon/site.webmanifest" />
         <link
           rel="mask-icon"
-          href="/fav-icon/safari-pinned-tab.svg"
+          href="./fav-icon/safari-pinned-tab.svg"
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#2b5797" />

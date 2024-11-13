@@ -16,7 +16,7 @@ const Feature = () => {
           <Title uptitle="For all devices" title="Unique design" />
           <div className="mt-24 text-center">
             <Image
-              src="/image/feature/device.png"
+              src="./image/feature/device.png"
               alt="Image"
               className="mx-auto"
               width={596}

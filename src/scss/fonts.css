@@ -1,35 +1,35 @@
 @font-face{
 	font-family: 'KaushanScript-Regular';
 	font-display: swap;
-	src: url("/fonts/KaushanScript-Regular.woff2") format("woff2"), url("/fonts/KaushanScript-Regular.woff") format("woff");
+	src: url("../../public/fonts/KaushanScript-Regular.woff2") format("woff2"), url("../../public/fonts/KaushanScript-Regular.woff") format("woff");
 	font-weight: Regular;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'Montserrat-Bold';
 	font-display: swap;
-	src: url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
+	src: url("../../public/fonts/Montserrat-Bold.woff2") format("woff2"), url("../../public/fonts/Montserrat-Bold.woff") format("woff");
 	font-weight: Bold;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'Montserrat-Regular';
 	font-display: swap;
-	src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+	src: url("../../public/fonts/Montserrat-Regular.woff2") format("woff2"), url("../../public/fonts/Montserrat-Regular.woff") format("woff");
 	font-weight: Regular;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'Roboto-LightItalic';
 	font-display: swap;
-	src: url("/fonts/Roboto-LightItalic.woff2") format("woff2"), url("/fonts/Roboto-LightItalic.woff") format("woff");
+	src: url("../../public/fonts/Roboto-LightItalic.woff2") format("woff2"), url("../../public/fonts/Roboto-LightItalic.woff") format("woff");
 	font-weight: LightItalic;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'Roboto-Regular';
 	font-display: swap;
-	src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+	src: url("../../public/fonts/Roboto-Regular.woff2") format("woff2"), url("../../public/fonts/Roboto-Regular.woff") format("woff");
 	font-weight: Regular;
 	font-style: normal;
 }

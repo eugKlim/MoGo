@@ -5,17 +5,17 @@ import Image from 'next/image';
 const Testimonial = () => {
   const testimonialData = [
     {
-      image: '/image/testimonial/image.png',
+      image: './image/testimonial/image.png',
       text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
       name: 'Jon Doe',
     },
     {
-      image: '/image/testimonial/image.png',
+      image: './image/testimonial/image.png',
       text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
       name: 'Anna Doe',
     },
     {
-      image: '/image/testimonial/image.png',
+      image: './image/testimonial/image.png',
       text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.”',
       name: 'Tommy Doe',
     },

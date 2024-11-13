@@ -8,25 +8,25 @@ const Say = () => {
   useBgCheckFormats();
   const sayData = [
     {
-      image: '/image/say/1.png',
+      image: './image/say/1.png',
       name: 'Nick Karvounis',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
     {
-      image: '/image/say/2.png',
+      image: './image/say/2.png',
       name: 'Jaelynn Castillo',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
     {
-      image: '/image/say/3.png',
+      image: './image/say/3.png',
       name: 'Mike Petrucci',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
     {
-      image: '/image/say/4.png',
+      image: './image/say/4.png',
       name: 'Matthew Dix',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',

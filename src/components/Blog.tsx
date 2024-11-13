@@ -9,7 +9,7 @@ const Blog = () => {
       dateMonth: 'JAN',
       title: 'LOREM IPSUM DOLOR SIT AMET',
       text: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/image/blog/1.jpg',
+      image: './image/blog/1.jpg',
       watch: '12',
       comment: '8',
     },
@@ -18,7 +18,7 @@ const Blog = () => {
       dateMonth: 'JAN',
       title: 'SED DO EIUSMOD TEMPOR',
       text: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/image/blog/2.jpg',
+      image: './image/blog/2.jpg',
       watch: '22',
       comment: '1',
     },
@@ -27,7 +27,7 @@ const Blog = () => {
       dateMonth: 'JAN',
       title: 'INCIDIDUNT UT LABORE ET DOLORE',
       text: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/image/blog/3.jpg',
+      image: './image/blog/3.jpg',
       watch: '555',
       comment: '231',
     },
@@ -51,9 +51,8 @@ const Blog = () => {
                   <Image
                     src={data.image}
                     alt="Image"
-                    width={340}
-                    height={214}
-                    sizes="auto"
+                    width={380}
+                    height={240}
                   />
 
                   <div className="absolute bottom-4 -left-2 inline-block text-center bg-cyan-400 text-white py-1 px-2">
@@ -77,7 +76,7 @@ const Blog = () => {
                   <div className="flex space-x-4">
                     <div className="flex space-x-2 items-center">
                       <Image
-                        src="/image/global/watch-ico.svg"
+                        src="./image/global/watch-ico.svg"
                         alt="icon watch"
                         className="w-auto"
                         width={27}
@@ -91,7 +90,7 @@ const Blog = () => {
                     </div>
                     <div className="flex space-x-2 items-center">
                       <Image
-                        src="/image/global/comment-ico.svg"
+                        src="./image/global/comment-ico.svg"
                         alt="icon comment"
                         className="w-auto"
                         width={20}

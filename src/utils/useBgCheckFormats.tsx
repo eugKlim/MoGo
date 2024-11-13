@@ -24,7 +24,7 @@ const supportsWebp = async (): Promise<boolean> => {
 
 const setLazyBackgrounds = async (): Promise<void> => {
   const lazyBgElements = document.querySelectorAll<HTMLElement>('.item-bg');
-  for (let lazyBgElement of lazyBgElements) {
+  for (const lazyBgElement of lazyBgElements) {
     let imageUrl = lazyBgElement.getAttribute('data-bg') ?? '';
     const baseImagePath = imageUrl.substring(0, imageUrl.lastIndexOf('.'));
 

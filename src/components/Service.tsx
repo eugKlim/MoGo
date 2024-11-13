@@ -5,32 +5,32 @@ import Image from 'next/image';
 const Service = () => {
   const serviceData = [
     {
-      icon: 'image/service/1.png',
+      icon: './image/service/1.png',
       title: 'Photography',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: 'image/service/2.png',
+      icon: './image/service/2.png',
       title: 'Web Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: 'image/service/3.png',
+      icon: './image/service/3.png',
       title: 'Creativity',
       text: 'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: 'image/service/4.png',
+      icon: './image/service/4.png',
       title: 'Css/Html',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: 'image/service/5.png',
+      icon: './image/service/5.png',
       title: 'Photography',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: 'image/service/6.png',
+      icon: './image/service/6.png',
       title: 'digital',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
@@ -46,7 +46,7 @@ const Service = () => {
               <div className="flex max-w-[346px] my-8 mx-auto" key={index}>
                 <div className="pt-1 pr-3">
                   <Image
-                    src={'/' + data.icon}
+                    src={data.icon}
                     alt="image"
                     width={40}
                     height={40}

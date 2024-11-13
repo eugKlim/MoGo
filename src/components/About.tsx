@@ -8,15 +8,15 @@ import Image from 'next/image';
 const About = () => {
   const aboutCardData = [
     {
-      img: '/image/about/1.jpg',
+      image: './image/about/1.jpg',
       text: 'super team',
     },
     {
-      img: '/image/about/2.jpg',
+      image: './image/about/2.jpg',
       text: 'super team',
     },
     {
-      img: '/image/about/3.jpg',
+      image: './image/about/3.jpg',
       text: 'super team',
     },
   ];
@@ -41,7 +41,7 @@ const About = () => {
             >
               <div className="relative transition duration-300 linear lg:group-hover:-translate-x-4 lg:group-hover:-translate-y-4 ">
                 <Image
-                  src={data.img}
+                  src={data.image}
                   alt="image"
                   width={380}
                   height={250}
@@ -76,7 +76,12 @@ const About = () => {
                   <></>
                 )}
 
-                <img alt="Image" src="image/about/about-team.png" />
+                <Image
+                  alt="Image"
+                  src="./image/about/about-team.png"
+                  width={32}
+                  height={23}
+                />
 
                 <p className="uppercase font-MontserratBold mt-1">
                   {data.text}

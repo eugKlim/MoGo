@@ -1,7 +1,22 @@
 import { useState } from 'react';
 
+interface IDataItem {
+  image: string;
+  text: string;
+  name: string;
+  work: string;
+  imageSize: number[];
+  hoverTitle: string;
+  class: string;
+  hoverText: string;
+}
+
+type TPartialDataItem = {
+  [K in keyof IDataItem]?: IDataItem[K];
+}
+
 interface IUseHoverMobile {
-  dataItems: any[];
+  dataItems: TPartialDataItem[];
 }
 
 const useHoverMobile = ({ dataItems }: IUseHoverMobile) => {

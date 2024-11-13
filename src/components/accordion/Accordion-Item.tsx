@@ -7,6 +7,7 @@ interface IAccordion {
   title: SN;
   content: SN;
   image: string;
+  imageSize: number[];
   imageFormat?: SN;
   isActive: boolean;
   onClick: React.MouseEventHandler<HTMLDivElement> | undefined;
@@ -16,6 +17,7 @@ const AccordionItem: React.FC<IAccordion> = ({
   title,
   content,
   image,
+  imageSize,
   isActive,
   onClick,
 }) => (
@@ -29,10 +31,9 @@ const AccordionItem: React.FC<IAccordion> = ({
         <Image
           alt="arrow"
           src={image}
-          width={30}
-          height={30}
-          className="mr-4"     
-          sizes="auto"    
+          width={imageSize[0]}
+          height={imageSize[1]}
+          className="mr-4"
         />
         {title}
       </span>
@@ -43,7 +44,7 @@ const AccordionItem: React.FC<IAccordion> = ({
       >
         <Image
           alt="arrow"
-          src="/image/global/arrow-down.png"
+          src="./image/global/arrow-down.png"
           width={22}
           height={12}
         />

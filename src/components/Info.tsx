@@ -11,19 +11,19 @@ import DribbleIco from './social-icons/dribble-ico';
 const Info = () => {
   const infoBlogsData = [
     {
-      image: '/image/info/blogs/1.jpg',
+      image: './image/info/blogs/1.jpg',
       title: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
       date: 'Jan 29, 2016',
       link: '#',
     },
     {
-      image: '/image/info/blogs/2.jpg',
+      image: './image/info/blogs/2.jpg',
       title: 'CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR',
       date: 'Jan 12, 2016',
       link: '#',
     },
     {
-      image: '/image/info/blogs/3.jpg',
+      image: './image/info/blogs/3.jpg',
       title: 'SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE',
       date: 'Jan 1, 2016',
       link: '#',
@@ -59,31 +59,31 @@ const Info = () => {
 
   const instagramData = [
     {
-      img: '/image/info/instagram/1.jpg',
+      image: './image/info/instagram/1.jpg',
     },
     {
-      img: '/image/info/instagram/2.jpg',
+      image: './image/info/instagram/2.jpg',
     },
     {
-      img: '/image/info/instagram/3.jpg',
+      image: './image/info/instagram/3.jpg',
     },
     {
-      img: '/image/info/instagram/4.jpg',
+      image: './image/info/instagram/4.jpg',
     },
     {
-      img: '/image/info/instagram/5.jpg',
+      image: './image/info/instagram/5.jpg',
     },
     {
-      img: '/image/info/instagram/6.jpg',
+      image: './image/info/instagram/6.jpg',
     },
     {
-      img: '/image/info/instagram/7.jpg',
+      image: './image/info/instagram/7.jpg',
     },
     {
-      img: '/image/info/instagram/8.jpg',
+      image: './image/info/instagram/8.jpg',
     },
     {
-      img: '/image/info/instagram/9.jpg',
+      image: './image/info/instagram/9.jpg',
     },
   ];
 
@@ -187,7 +187,7 @@ const Info = () => {
             {instagramData.map((data, index) => {
               return (
                 <Image
-                  src={data.img}
+                  src={data.image}
                   alt="Image"
                   width={88}
                   height={88}

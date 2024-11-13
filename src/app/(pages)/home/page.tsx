@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: 'word1, word2',
 };
 
-const homePage = () => {
+const HomePage = () => {
   return (
     <div>
       <Intro />
@@ -44,4 +44,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;

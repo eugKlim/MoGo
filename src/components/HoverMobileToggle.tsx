@@ -19,7 +19,7 @@ const HoverMobileToggle: React.FC<IHoverMobileToggle> = ({
     >
       {isOpen ? (
         <Image
-          src="/image/global/hand.svg"
+          src="./image/global/hand.svg"
           alt="hand show more"
           width={25}
           height={25}

@@ -6,6 +6,7 @@ interface IAccordionItemData {
   title: string;
   image: string;
   content: string;
+  imageSize: number[];
 }
 
 interface IAccordionProps {
@@ -26,6 +27,7 @@ const Accordion: React.FC<IAccordionProps> = ({ items }) => {
           title={item.title}
           content={item.content}
           image={item.image}
+          imageSize={item.imageSize}
           isActive={activeIndex === index}
           onClick={() => handleClick(index)}
         />

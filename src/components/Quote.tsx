@@ -25,7 +25,7 @@ const Quote = () => {
     >
       <div className="lg:w-[150px] sm:w-full sm:flex sm:justify-center sm:mb-7">
         <Image
-          src="/image/quote/quote-image.png"
+          src="./image/quote/quote-image.png"
           alt="image"
           width={126}
           height={126}
