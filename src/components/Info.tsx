@@ -11,19 +11,19 @@ import DribbleIco from './social-icons/dribble-ico';
 const Info = () => {
   const infoBlogsData = [
     {
-      image: './image/info/blogs/1.jpg',
+      image: './image/info/blogs/1.webp',
       title: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
       date: 'Jan 29, 2016',
       link: '#',
     },
     {
-      image: './image/info/blogs/2.jpg',
+      image: './image/info/blogs/2.webp',
       title: 'CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR',
       date: 'Jan 12, 2016',
       link: '#',
     },
     {
-      image: './image/info/blogs/3.jpg',
+      image: './image/info/blogs/3.webp',
       title: 'SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE',
       date: 'Jan 1, 2016',
       link: '#',
@@ -59,31 +59,31 @@ const Info = () => {
 
   const instagramData = [
     {
-      image: './image/info/instagram/1.jpg',
+      image: './image/info/instagram/1.webp',
     },
     {
-      image: './image/info/instagram/2.jpg',
+      image: './image/info/instagram/2.webp',
     },
     {
-      image: './image/info/instagram/3.jpg',
+      image: './image/info/instagram/3.webp',
     },
     {
-      image: './image/info/instagram/4.jpg',
+      image: './image/info/instagram/4.webp',
     },
     {
-      image: './image/info/instagram/5.jpg',
+      image: './image/info/instagram/5.webp',
     },
     {
-      image: './image/info/instagram/6.jpg',
+      image: './image/info/instagram/6.webp',
     },
     {
-      image: './image/info/instagram/7.jpg',
+      image: './image/info/instagram/7.webp',
     },
     {
-      image: './image/info/instagram/8.jpg',
+      image: './image/info/instagram/8.webp',
     },
     {
-      image: './image/info/instagram/9.jpg',
+      image: './image/info/instagram/9.webp',
     },
   ];
 

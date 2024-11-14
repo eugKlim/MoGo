@@ -32,7 +32,6 @@ const ToggleThemeBtn = () => {
     <div
       className="relative w-[47px] h-[27px] rounded-full cursor-pointer transition-colors select-none bg-gray-300"
       onClick={handleToggle}
-      aria-label="Toggle theme button"
     >
       <div
         className={`absolute top-1 w-5 h-5 flex items-center justify-center rounded-full transition-transform ${

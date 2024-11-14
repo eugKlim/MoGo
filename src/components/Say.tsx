@@ -2,41 +2,36 @@
 import React from 'react';
 import Title from './Title';
 import Image from 'next/image';
-import useBgCheckFormats from '@/utils/useBgCheckFormats';
 
 const Say = () => {
-  useBgCheckFormats();
   const sayData = [
     {
-      image: './image/say/1.png',
+      image: './image/say/1.webp',
       name: 'Nick Karvounis',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
     {
-      image: './image/say/2.png',
+      image: './image/say/2.webp',
       name: 'Jaelynn Castillo',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
     {
-      image: './image/say/3.png',
+      image: './image/say/3.webp',
       name: 'Mike Petrucci',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
     {
-      image: './image/say/4.png',
+      image: './image/say/4.webp',
       name: 'Matthew Dix',
       work: 'Graphic Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
     },
   ];
   return (
-    <section
-      className="bg-cover xl:bg-options item-bg overflow-hidden min-h-[812px]"
-      data-bg="image/say/say-bg.jpg"
-    >
+    <section className="bg-sayBg overflow-hidden min-h-[812px]">
       <div className="dark:bg-dark pb-8">
         <div className="container">
           <Title uptitle="Happy Clients" title="What people say" />

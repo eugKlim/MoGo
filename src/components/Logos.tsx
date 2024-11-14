@@ -6,7 +6,7 @@ const Logos = () => {
     <section className="min-h-[205px] md:bg-gray-300 md:py-10 sm:hidden md:block">
       <div className="container">
         <Image
-          src="./image/logos/logos.png"
+          src="./image/logos/logos.webp"
           alt="logos"
           width={1000}
           height={127}

@@ -1,11 +1,8 @@
 'use client';
 import React from 'react';
-import useBgCheckFormats from '@/utils/useBgCheckFormats';
 import Link from 'next/link';
 
 const Intro = () => {
-  useBgCheckFormats();
-
   const introItemsData = [
     {
       number: '01',
@@ -30,10 +27,7 @@ const Intro = () => {
   ];
 
   return (
-    <section
-      className={`bg-options min-w-full mt-[-120px]   text-white  sm:bg-cover item-bg`}
-      data-bg="image/intro/intro-bg.jpg"
-    >
+    <section className="bg-introBg min-w-full mt-[-120px] text-white sm:bg-cover">
       <div className="dark:bg-dark pb-9 pt-[300px]">
         <div>
           <h2 className="font-KaushanScripts text-3xl text-center text-white mb-8 md:text-6xl sm:text-4xl">
@@ -47,7 +41,7 @@ const Intro = () => {
             href="/about"
             className="inline-block relative left-1/2 transform -translate-x-2/4 bg-transparent border-white border-2 uppercase font-MontserratBold py-2 px-6 mt-[100px] transition-all duration-300 ease-linear lg:hover:bg-white lg:hover:text-stone-900"
             title="Learn more"
-            aria-label="Learn more"
+            aria-label="Learn more about"
           >
             Learn more
           </Link>

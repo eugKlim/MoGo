@@ -8,49 +8,49 @@ import HoverMobileToggle from './HoverMobileToggle';
 const Work = () => {
   const workData = [
     {
-      image: './image/work/1.jpg',
+      image: './image/work/1.webp',
       imageSize: [318, 258], //width, height
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
       class: 'relative group',
     },
     {
-      image: './image/work/2.jpg',
+      image: './image/work/2.webp',
       imageSize: [318, 258],
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
       class: 'relative group',
     },
     {
-      image: './image/work/3.jpg',
+      image: './image/work/3.webp',
       imageSize: [318, 516],
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
       class: 'relative group row-span-2',
     },
     {
-      image: './image/work/4.jpg',
+      image: './image/work/4.webp',
       imageSize: [318, 258],
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
       class: 'relative group',
     },
     {
-      image: './image/work/5.jpg',
+      image: './image/work/5.webp',
       imageSize: [318, 258],
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
       class: 'relative group',
     },
     {
-      image: './image/work/6.jpg',
+      image: './image/work/6.webp',
       imageSize: [318, 258],
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
       class: 'relative group',
     },
     {
-      image: './image/work/7.jpg',
+      image: './image/work/7.webp',
       imageSize: [318, 258],
       hoverTitle: 'creatively designed',
       hoverText: 'Lorem ipsum dolor sit',
@@ -102,7 +102,7 @@ const Work = () => {
                 <div>
                   <Image
                     alt="Image"
-                    src="./image/work/ico.png"
+                    src="./image/work/ico.webp"
                     width={30}
                     height={30}
                     className="mx-auto"

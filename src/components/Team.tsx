@@ -13,17 +13,17 @@ import InstagramIco from './social-icons/instagram-ico';
 const Team = () => {
   const teamData = [
     {
-      image: './image/team/1.jpg',
+      image: './image/team/1.webp',
       name: 'MATTHEW DIX',
       work: 'Graphic Design',
     },
     {
-      image: './image/team/2.jpg',
+      image: './image/team/2.webp',
       name: 'CHRISTOPHER CAMPBELL',
       work: 'Branding/UX design',
     },
     {
-      image: './image/team/3.jpg',
+      image: './image/team/3.webp',
       name: 'MICHAEL FERTIG',
       work: 'Developer',
     },

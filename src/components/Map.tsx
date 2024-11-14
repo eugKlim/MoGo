@@ -1,12 +1,9 @@
 'use client';
 import { useState } from 'react';
-import useBgCheckFormats from '@/utils/useBgCheckFormats';
 import Image from 'next/image';
 import Popup from './popup/Popup';
 
 const Map = () => {
-  useBgCheckFormats();
-
   // popup state
   const [modalIsOpenMap, setModalIsOpenMap] = useState(false);
   const openModalMap = () => setModalIsOpenMap(true);
@@ -16,10 +13,9 @@ const Map = () => {
   return (
     <>
       <section
-        className="bg-say-bg bg-cover xl:bg-options flex justify-center items-center flex-col cursor-pointer item-bg min-h-[167px]"
+        className="bg-mapBg flex justify-center items-center flex-col cursor-pointer min-h-[167px]"
         aria-label="Open map"
         title="Open map"
-        data-bg="image/map/map-bg.jpg"
         onClick={openModalMap}
       >
         <div className="dark:bg-dark w-full h-full py-[50px]">

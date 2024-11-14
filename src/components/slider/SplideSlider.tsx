@@ -37,7 +37,7 @@ const SplideSlider: React.FC<SplideSliderProps> = ({ options, slides }) => {
         <button className="splide__arrow splide__arrow--prev text-white hover:text-gray-700" aria-label="prev slide">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="none" 
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"

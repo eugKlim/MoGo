@@ -21,7 +21,13 @@ export default {
         md: '650px',
         lg: '800px',
         xl: '1000px',
-      }
+      },
+      backgroundImage: {
+        'introBg': "url('@/public/image/intro/intro-bg.webp')",
+        'featureBg': "url('@/public/image/feature/feature-bg.webp')",
+        'sayBg': "url('@/public/image/say/say-bg.webp')",
+        'mapBg': "url('@/public/image/map/map-bg.webp')",
+      },
     },
   },
   plugins: [],

@@ -1,22 +1,17 @@
 'use client';
 import React from 'react';
 import Title from './Title';
-import useBgCheckFormats from '@/utils/useBgCheckFormats';
 import Image from 'next/image';
 
 const Feature = () => {
-  useBgCheckFormats();
   return (
-    <section
-      className="min-w-full mx-auto item-bg md:min-h-[847px]"
-      data-bg="image/feature/feature-bg.jpg"
-    >
+    <section className="bg-featureBg min-w-full mx-auto md:min-h-[847px]">
       <div className="dark:bg-dark">
         <div className="container">
           <Title uptitle="For all devices" title="Unique design" />
           <div className="mt-24 text-center">
             <Image
-              src="./image/feature/device.png"
+              src="./image/feature/device.webp"
               alt="Image"
               className="mx-auto"
               width={596}
