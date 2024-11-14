@@ -46,7 +46,9 @@
 [🔗 Ссылка на сайт](https://eugklim.github.io/Mogo/) <br> <br>
 
 **PageSpeed Insights:** [ссылка pageSpeed](https://pagespeed.web.dev/?hl=ru)
+
 <br>
+
 **Валидатор:** [ссылка pageSpeed](https://validator.w3.org/)
 
 <br>
