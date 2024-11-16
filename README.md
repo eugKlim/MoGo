@@ -41,7 +41,7 @@
 
 <br>
 
-[🔗 Ссылка на сайт](https://eugklim.github.io/Mogo/) <br> <br>
+[🔗 Ссылка на сайт](https://mogon.vercel.app/) <br> <br>
 
 <br>
 
