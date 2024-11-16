@@ -44,7 +44,7 @@ const AccordionItem: React.FC<IAccordion> = ({
       >
         <Image
           alt="arrow"
-          src="./image/global/arrow-down.webp"
+          src="/image/global/arrow-down.webp"
           width={22}
           height={12}
         />

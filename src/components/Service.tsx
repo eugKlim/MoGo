@@ -5,32 +5,32 @@ import Image from 'next/image';
 const Service = () => {
   const serviceData = [
     {
-      icon: './image/service/1.webp',
+      icon: '/image/service/1.webp',
       title: 'Photography',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: './image/service/2.webp',
+      icon: '/image/service/2.webp',
       title: 'Web Design',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: './image/service/3.webp',
+      icon: '/image/service/3.webp',
       title: 'Creativity',
       text: 'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: './image/service/4.webp',
+      icon: '/image/service/4.webp',
       title: 'Css/Html',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: './image/service/5.webp',
+      icon: '/image/service/5.webp',
       title: 'Photography',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: './image/service/6.webp',
+      icon: '/image/service/6.webp',
       title: 'digital',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },

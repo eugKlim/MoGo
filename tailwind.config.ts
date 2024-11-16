@@ -1,10 +1,10 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class',
   theme: {
@@ -23,10 +23,10 @@ export default {
         xl: '1000px',
       },
       backgroundImage: {
-        'introBg': "url('../../public/image/intro/intro-bg.webp')",
-        'featureBg': "url('../../public/image/feature/feature-bg.webp')",
-        'sayBg': "url('../../public/image/say/say-bg.webp')",
-        'mapBg': "url('../../public/image/map/map-bg.webp')",
+        introBg: "url('/image/intro/intro-bg.webp')",
+        featureBg: "url('/image/feature/feature-bg.webp')",
+        sayBg: "url('/image/say/say-bg.webp')",
+        mapBg: "url('/image/map/map-bg.webp')",
       },
     },
   },

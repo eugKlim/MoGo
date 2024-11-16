@@ -21,7 +21,7 @@ const Map = () => {
         <div className="dark:bg-dark w-full h-full py-[50px]">
           <div className="text-center flex justify-center items-center flex-col">
             <Image
-              src="./image/map/map-ico.svg"
+              src="/image/map/map-ico.svg"
               alt="map icon"
               width={19}
               height={25}

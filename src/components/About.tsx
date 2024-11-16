@@ -8,15 +8,15 @@ import Image from 'next/image';
 const About = () => {
   const aboutCardData = [
     {
-      image: './image/about/1.webp',
+      image: '/image/about/1.webp',
       text: 'super team',
     },
     {
-      image: './image/about/2.webp',
+      image: '/image/about/2.webp',
       text: 'super team',
     },
     {
-      image: './image/about/3.webp',
+      image: '/image/about/3.webp',
       text: 'super team',
     },
   ];
@@ -78,7 +78,7 @@ const About = () => {
 
                 <Image
                   alt="Image"
-                  src="./image/about/about-team.webp"
+                  src="/image/about/about-team.webp"
                   width={32}
                   height={23}
                 />
