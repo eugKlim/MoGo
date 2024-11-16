@@ -81,6 +81,19 @@
     }
   }
   .nav {
+    &-line {
+      position: relative;
+      color: #eab308;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #eab308;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+    }
     &-block {
       transform: translateX(-100%);
       transition: 0.2s linear;

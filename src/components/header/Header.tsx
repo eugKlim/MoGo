@@ -111,10 +111,8 @@ const Header = () => {
               return (
                 <Link
                   href={`/${data.link}`}
-                  className={`hover:text-yellow-500 relative link ${
-                    isActive
-                      ? 'text-yellow-500 before:content-[""] before:absolute before:w-full before:h-[2] before:bg-yellow-500 before:-bottom-1 before:left-0'
-                      : ''
+                  className={`hover:text-yellow-500 ${
+                    isActive ? 'nav-line' : ''
                   }`}
                   aria-label={data.nameLink}
                   key={index}
